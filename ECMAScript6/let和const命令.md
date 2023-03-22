@@ -129,11 +129,11 @@ for (let i = 0; i < 10; i++) {
 let status = true;
 if (status) {
   let status = 'a';
-  console.log(status);
+  console.log(status); // 不会报错
 }
 while(status) {
   let status = 'b';
-  console.log(status);
+  console.log(status); // 不会报错
 }
 ```
 
@@ -152,8 +152,8 @@ console.log(window.b); // undefined
 其底层的本质是保证变量指向的内存地址所保存的数据不变。所以当我们使用const声明一个引用类型的值时，我们是可以改变变量内部的属性值的。
 
 ## 参考
-[let和const命令 - ECMAScript6入门](https://es6.ruanyifeng.com/#docs/let)  
-[let - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let?retiredLocale=he#specifications)
+* [let和const命令 - ECMAScript6入门](https://es6.ruanyifeng.com/#docs/let)  
+* [let - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let?retiredLocale=he#specifications)
 
 
 
