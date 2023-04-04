@@ -1,7 +1,7 @@
 # Symbol
 
 ## 作用
-`Symbol`表示独一无二的值。在ES5中，对象的属性名都是字符串，而在ES6中，对象的属性名除了可以是字符串。还可以是`Symbol`类型。  
+`Symbol`表示独一无二的值。在ES5中，对象的属性名都是字符串，而在ES6中，对象的属性名除了可以是字符串，还可以是`Symbol`类型。  
 `Symbol()`前不能使用`new`，用`Symbol()`生成的变量是一个原始类型的值，不是对象。
 ```javascript
 let a = Symbol();
@@ -120,8 +120,6 @@ for(let item of obj) {
     console.log(item); // 1 2 3
 }
 ```
-
-### Symbol.toPrimitive
 
 ### 其他一些属性
 * `Symbol.isConcatSpreadable`，对象属性，可以使布尔值或undefined。用来设置数组对象或类数组对象在数组`concat`时的展开行为。
